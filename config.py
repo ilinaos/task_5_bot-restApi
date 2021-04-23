@@ -1,2 +1,2 @@
-ap_key='35eb118b2ea74f4abd932f9b09e7c205'
-tg_key='1796482318:AAGijFv_OgK7xLPGGJnkQGJygsM-IYMnQZg'
+ap_key='enter your key'
+tg_key='enter your key'
