@@ -113,8 +113,11 @@ def handle_view_news(message):
 	url = "http://127.0.0.1:5000/news"
 	result=requests.post(url, json=data)
 	text=''
-	for i in result.json():
-		text+=i+'\n'+result.json()[i]+'\n\n'
+	if len(result.json())!=0:
+		for i in result.json():
+			text+=i+'\n'+result.json()[i]+'\n\n'
+	else:
+		text='Для вас пока нет новостей'
 	bot.send_message(message.from_user.id, text)
 
 @bot.message_handler(func=lambda message: True)
